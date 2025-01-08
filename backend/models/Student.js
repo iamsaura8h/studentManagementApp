@@ -22,7 +22,7 @@ const studentSchema = mongoose.Schema({
   },
   gender: {
     type: String,
-    enum: ['M', 'F'],
+    enum: ['Male', 'Female'],
     required: true,
   },
 }, {

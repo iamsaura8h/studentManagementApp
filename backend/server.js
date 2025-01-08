@@ -2,16 +2,19 @@ const express = require('express');
 const dotenv = require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
+const cors = require('cors');
 
 const studentRoutes = require('./routes/studentRoutes');
 
 // Middleware to parse JSON
 app.use(express.json());
+app.use(cors());
+
 
 // Basic route for testing
-app.get('/', (req, res) => {
-  res.send('Server is running!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Server is running!');
+// });
 
 app.use('/api/students', studentRoutes);
 

@@ -35,6 +35,7 @@ router.get('/searchByName/:name', async (req, res) => {
 
   
 // PUT route to update a student by ID
+
 // router.put('/:id', async (req, res) => {
 //     try {
 //       const { id } = req.params; // Get the student's ID from the URL params
@@ -49,6 +50,7 @@ router.get('/searchByName/:name', async (req, res) => {
 //       res.status(500).json({ message: "Error updating student" });
 //     }
 //   });
+
 
 // PUT route to update a student by registration number
 router.put('/updateByRegNumber/:registrationNumber', async (req, res) => {
